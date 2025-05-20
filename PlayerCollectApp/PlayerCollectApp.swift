@@ -11,7 +11,8 @@ import SwiftUI
 struct PlayerCollectApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandingView()
         }
     }
 }
+
