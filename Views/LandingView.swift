@@ -7,8 +7,16 @@
 
 import SwiftUI
 
+
 struct LandingView: View {
+   @State private var searchText = ""
     var body: some View {
-        Text("Landing Page")
-    }
-}
+        VStack {
+                    TextField("Search Players", text: $searchText)
+                        .textFieldStyle(.roundedBorder)
+                        .padding()
+            Spacer()
+                   }
+        .navigationTitle("Badminton Stars")
+           }
+       }
