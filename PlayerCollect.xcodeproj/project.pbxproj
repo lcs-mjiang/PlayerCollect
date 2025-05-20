@@ -22,6 +22,7 @@
 		4C1F1D082DDCD7BA00016386 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C1F1D0D2DDCD89900016386 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		4C1F1D0E2DDCDAA700016386 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +67,7 @@
 		4C1F1CFD2DDCD73E00016386 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */,
 				4C1F1D0E2DDCDAA700016386 /* ItemView.swift */,
 				4C1F1D0D2DDCD89900016386 /* LandingView.swift */,
 			);
