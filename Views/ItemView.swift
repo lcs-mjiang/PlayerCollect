@@ -33,8 +33,21 @@ struct ItemView: View {
                     Text(item)
                 }
             }
+            Button(action: {
+                if !favorites.contains(player) {
+                    favorites.append(player)
+                }
+            }) {
+                Text("Add to Favorites")
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
+            .padding()
+            
+            Spacer()
         }
         .padding()
-        .navigationTitle(player.name)
     }
-}
+
