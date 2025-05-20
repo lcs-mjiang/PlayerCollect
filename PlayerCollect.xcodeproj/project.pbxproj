@@ -10,17 +10,21 @@
 		4C1F1CE92DDCD6B200016386 /* PlayerCollectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1CE82DDCD6B200016386 /* PlayerCollectApp.swift */; };
 		4C1F1D042DDCD7B400016386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F1D022DDCD7B400016386 /* Assets.xcassets */; };
 		4C1F1D0B2DDCD7BA00016386 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1F1D082DDCD7BA00016386 /* Preview Assets.xcassets */; };
+		4C1F1D122DDCE1D100016386 /* PlayerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D052DDCD7B700016386 /* PlayerItem.swift */; };
+		4C1F1D132DDCE1D100016386 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */; };
+		4C1F1D142DDCE1D100016386 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0E2DDCDAA700016386 /* PlayerDetailView.swift */; };
+		4C1F1D152DDCE1D100016386 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0D2DDCD89900016386 /* PlayerListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C1F1CE52DDCD6B200016386 /* PlayerCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PlayerCollect.app; path = "/Users/michael/Grade 11 CS/Grade 11 intro to CS/PlayerCollect/build/Debug-iphoneos/PlayerCollect.app"; sourceTree = "<absolute>"; };
 		4C1F1CE82DDCD6B200016386 /* PlayerCollectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCollectApp.swift; sourceTree = "<group>"; };
 		4C1F1D022DDCD7B400016386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1F1D052DDCD7B700016386 /* PlayerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerItem.swift; sourceTree = "<group>"; };
 		4C1F1D082DDCD7BA00016386 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4C1F1D0D2DDCD89900016386 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
-		4C1F1D0E2DDCDAA700016386 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		4C1F1D0E2DDCDAA700016386 /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
 		4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		4C1F1D112DDCE0E300016386 /* PlayerCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1F1CFA2DDCD70100016386 /* PlayerCollectApp */,
+				4C1F1D112DDCE0E300016386 /* PlayerCollect.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */,
-				4C1F1D0E2DDCDAA700016386 /* ItemView.swift */,
+				4C1F1D0E2DDCDAA700016386 /* PlayerDetailView.swift */,
 				4C1F1D0D2DDCD89900016386 /* PlayerListView.swift */,
 			);
 			path = Views;
@@ -106,7 +111,7 @@
 			packageProductDependencies = (
 			);
 			productName = PlayerCollect;
-			productReference = 4C1F1CE52DDCD6B200016386 /* PlayerCollect.app */;
+			productReference = 4C1F1D112DDCE0E300016386 /* PlayerCollect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,6 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1F1D122DDCE1D100016386 /* PlayerItem.swift in Sources */,
+				4C1F1D132DDCE1D100016386 /* FavoritesView.swift in Sources */,
+				4C1F1D142DDCE1D100016386 /* PlayerDetailView.swift in Sources */,
+				4C1F1D152DDCE1D100016386 /* PlayerListView.swift in Sources */,
 				4C1F1CE92DDCD6B200016386 /* PlayerCollectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +302,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlayerCollect/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlayerCollectApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -322,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PlayerCollect/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"PlayerCollectApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UG443984D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

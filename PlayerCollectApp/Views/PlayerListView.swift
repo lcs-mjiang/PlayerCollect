@@ -8,14 +8,16 @@
 import SwiftUI
 
 
-struct LandingView: View {
+struct PlayerListView: View {
+    
+    // MARK: Stored properties
     @State private var searchText = ""
     @State private var favoritePlayers: [PlayerItem] = []
     let allPlayers: [PlayerItem] = [
-        PlayerItem(name: "Viktor Axelsen", country: "Denmark", rank: 1, wins: 300, losses: 50, equipment: ["Yonex Astrox 100ZZ"]),
-        PlayerItem(name: "Kento Momota", country: "Japan", rank: 10, wins: 280, losses: 70, equipment: ["Yonex Astrox 99 Pro"]),
-        PlayerItem(name: "Anthony Ginting", country: "Indonesia", rank: 5, wins: 260, losses: 65, equipment: ["Li-Ning Aeronaut 9000C"])
+        example1, example2, example3
     ]
+    
+    // MARK: Computed properties
     var filteredPlayers: [PlayerItem] {
         if searchText.isEmpty {
             return allPlayers
@@ -23,24 +25,26 @@ struct LandingView: View {
             return allPlayers.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
     }
+    
     var body: some View {
-        VStack {
-            TextField("Search Players", text: $searchText)
-                .textFieldStyle(.roundedBorder)
-                .padding()
-            List(filteredPlayers) { player in
-                NavigationLink(destination: ItemView(player: player, favorites: $favoritePlayers)) {
-                    VStack(alignment: .leading) {
-                        Text(player.name).font(.headline)
-                        Text("Country: \(player.country)").font(.subheadline)
+        NavigationStack {
+            VStack {
+                List(filteredPlayers) { player in
+                    NavigationLink {
+                        PlayerDetailView(player: player)
+                    } label: {
+                        Text(player.name)
                     }
+
                 }
+                .searchable(text: $searchText)
+                Spacer()
             }
-            Spacer()
-            NavigationLink("Favorites", destination: FavoritesView(favorites: favoritePlayers))
-                .padding()
+            .navigationTitle("Badminton Stars")
         }
-        .navigationTitle("Badminton Stars")
     }
 }
 
+#Preview {
+    PlayerListView()
+}
