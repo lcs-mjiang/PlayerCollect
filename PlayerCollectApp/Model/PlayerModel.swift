@@ -4,10 +4,9 @@
 //
 //  Created by Michael on 2025/5/23.
 //
-
 import Foundation
 
-struct Player: Identifiable, Codable {
+struct DetailedPlayer: Identifiable, Codable {
     let id = UUID()
     
     let name: String
@@ -19,3 +18,4 @@ struct Player: Identifiable, Codable {
     let wins: Int
     let losses: Int
 }
+
