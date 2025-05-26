@@ -38,7 +38,7 @@ struct PlayerDetailView: View {
 
             Divider()
 
-            // 中部：TabView（Stats / Equipment）
+            //TabView（Stats / Equipment）
             Picker("Tab", selection: $selectedTab) {
                 Text("Stats").tag(0)
                 Text("Equipment").tag(1)

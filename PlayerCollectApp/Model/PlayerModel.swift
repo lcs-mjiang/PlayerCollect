@@ -17,5 +17,6 @@ struct DetailedPlayer: Identifiable, Codable {
     let matches: Int
     let wins: Int
     let losses: Int
+    let imageName: String
 }
 
