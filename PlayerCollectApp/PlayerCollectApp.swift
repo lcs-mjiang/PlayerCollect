@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PlayerCollectApp: App {
+    @StateObject private var viewModel = PlayerViewModel()
+    
     var body: some Scene {
         WindowGroup {
             PlayerListView()
+                .environmentObject(viewModel)
         }
     }
 }
