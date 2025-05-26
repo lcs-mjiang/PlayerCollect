@@ -14,6 +14,7 @@
 		4C1F1D132DDCE1D100016386 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */; };
 		4C1F1D142DDCE1D100016386 /* PlayerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0E2DDCDAA700016386 /* PlayerDetailView.swift */; };
 		4C1F1D152DDCE1D100016386 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F1D0D2DDCD89900016386 /* PlayerListView.swift */; };
+		4CB3AF0A2DE0A60A00A63CA9 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB3AF092DE0A60300A63CA9 /* PlayerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,16 @@
 		4C1F1D0E2DDCDAA700016386 /* PlayerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailView.swift; sourceTree = "<group>"; };
 		4C1F1D0F2DDCDC6A00016386 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		4C1F1D112DDCE0E300016386 /* PlayerCollect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerCollect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CB3AF092DE0A60300A63CA9 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4CB3AF052DE0A2D500A63CA9 /* ViewModels */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4C1F1CE22DDCD6B200016386 /* Frameworks */ = {
@@ -49,6 +59,7 @@
 		4C1F1CFA2DDCD70100016386 /* PlayerCollectApp */ = {
 			isa = PBXGroup;
 			children = (
+				4CB3AF052DE0A2D500A63CA9 /* ViewModels */,
 				4C1F1CE82DDCD6B200016386 /* PlayerCollectApp.swift */,
 				4C1F1D062DDCD7B700016386 /* Model */,
 				4C1F1CFD2DDCD73E00016386 /* Views */,
@@ -79,6 +90,7 @@
 		4C1F1D062DDCD7B700016386 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CB3AF092DE0A60300A63CA9 /* PlayerModel.swift */,
 				4C1F1D052DDCD7B700016386 /* PlayerItem.swift */,
 			);
 			path = Model;
@@ -106,6 +118,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4CB3AF052DE0A2D500A63CA9 /* ViewModels */,
 			);
 			name = PlayerCollect;
 			packageProductDependencies = (
@@ -170,6 +185,7 @@
 				4C1F1D142DDCE1D100016386 /* PlayerDetailView.swift in Sources */,
 				4C1F1D152DDCE1D100016386 /* PlayerListView.swift in Sources */,
 				4C1F1CE92DDCD6B200016386 /* PlayerCollectApp.swift in Sources */,
+				4CB3AF0A2DE0A60A00A63CA9 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
